@@ -40,7 +40,7 @@ playwright install chromium
 
 ## Configuration
 
-Open `test.py` and configure the following variables:
+Open `app.py` and configure the following variables:
 
 ```python
 BOT_TOKEN = "YOUR_BOT_TOKEN"
@@ -56,7 +56,7 @@ You can create a Telegram bot using **@BotFather**.
 Start the program:
 
 ```bash
-python test.py
+python app.py
 ```
 
 The first time:
