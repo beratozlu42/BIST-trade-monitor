@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     html {
         overscroll-behavior: none;
     }
+
     body {
         margin: auto;
         max-width: 700px;
@@ -16,42 +18,88 @@
         background-image: url(https://www.geocities.ws/ratusnorvegicus/bats.gif);
         color: white;
     }
+
     center {
-        background-color: rgb(43, 11, 11);
+        background-color: rgb(46, 33, 33);
         padding: 20px;
     }
+
     .head {
         font-weight: bold;
     }
+
     .text {
         font-weight: bold;
         font-size: 22px;
     }
+
     ol {
         padding: 20px 40px;
     }
+
     li p {
         text-align: left;
     }
+
     .section {
         color: gray;
     }
+
     #mark {
         color: red;
     }
 
+    #command {
+        padding: 5px;
+        font-family: 'Lucida Console', Consolas, 'Courier New', Monaco, monospace;
+        color: greenyellow;
+        background-color: black;
+    }
 </style>
+
 <body>
     <CENTER>
         <h1 class="head">DEEP ALERT</h1>
-        <p class="text">How to use the Program</p>
-        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnN0aGdvZWtmeTZvNm0wN2ZpMXU3dzJoaXkwMHFtY2RtdmE2MDI4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QowuvpSus8Y9qnlle8/giphy.gif" alt="gif">
+        <p class="text">Program Manual</p>
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnN0aGdvZWtmeTZvNm0wN2ZpMXU3dzJoaXkwMHFtY2RtdmE2MDI4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QowuvpSus8Y9qnlle8/giphy.gif"
+            alt="gif">
+
+        <div class="list">
+            <ol>
+                <p class="section">Installing the Program:</p>
+                <li>
+                    <p>In order to run this program you have to install Python to your device. Open cmd and run this
+                        command. This command will install Python for all users:</p>
+                    <p id="command">winget install Python.Python.3 --scope machine</p>
+                    <p>To check if Python has installed type this command:</p>
+                    <p id="command">python --version</p>
+                    <p>If Python version comes up it means Python installed!</p>
+                </li>
+                <li>
+                    <p>Clone or download this project. Extract the zip file. And go to the project folder in CMD using
+                        "cd" command. For example:</p>
+                    <p id="command">cd Downloads/BIST-trade-monitor</p>
+                    <p id="mark"><i>Note! You need to get inside the main project folder. Check if there is another
+                            BIST-trade-monitor inside the folder. If yes you should open it too!</i></p>
+                </li>
+                <li>
+                    <p>Now you need to install the Playwright browser:</p>
+                    <p id="command">BOT_TOKEN = "YOUR_BOT_TOKEN"<br>CHAT_ID = "YOUR_CHAT_ID"</p>
+                </li>
+                <li>
+                    <p>You need to configure the program. Click app.py and set the values</p>
+                    <p id="command">playwright install chromium</p>
+                </li>
+            </ol>
+        </div>
 
         <div class="list">
             <ol>
                 <p class="section">Start the Program:</p>
                 <li>
-                    <p>First things first, you got to start the program! use <span id="mark">'python app.py'</span> to start the program</p>
+                    <p>Now you got to start the program! use this command to
+                        start the program:</p>
+                    <p id="command">python app.py</p>
                 </li>
                 <li>
                     <p>Telegram Web will open</p>
@@ -76,7 +124,7 @@
                 <p class="section">Stopping the Program:</p>
                 <li>
                     <p>Press:
-                       <span id="mark">CTRL + C</span>
+                        <span id="mark">CTRL + C</span>
                     </p>
                 </li>
                 <li>
@@ -90,4 +138,5 @@
         </footer>
     </CENTER>
 </body>
+
 </html>
